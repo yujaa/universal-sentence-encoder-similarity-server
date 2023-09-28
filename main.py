@@ -12,6 +12,7 @@ import tensorflow as tf
 
 app = Flask(__name__, static_folder="static")
 
+# universal-sentence-encoder module path.
 module_url = "./large5"
 model = hub.load(module_url)
 print ("module %s loaded" % module_url)
